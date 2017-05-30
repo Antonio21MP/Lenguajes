@@ -12,4 +12,4 @@ RUN git clone https://github.com/Antonio21MP/Lenguajes
 
 EXPOSE 8080	
 
-CMD cd/Lenguajes/Go/ && go run server.go
+CMD cd Lenguajes/Go/ && go run server.go

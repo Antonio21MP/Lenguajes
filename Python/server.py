@@ -4,7 +4,7 @@ import json
 import sys
 import googlemaps
 import base64
-sys.path.append("./Ejercicios/ejercicio1")
+#sys.path.append("./Ejercicios/ejercicio1")
 from ejercicio1 import get_route
 @post('/ejercicio1')
 def ejercicio1():
@@ -21,7 +21,7 @@ def ejercicio1():
     return_value = json.dumps(json_value,sort_keys=True, indent=4)
     return HTTPResponse(status=200, body=return_value)
 
-sys.path.append("./Ejercicios/ejercicio2")
+#sys.path.append("./Ejercicios/ejercicio2")
 from ejercicio2 import get_restaurants
 @post('/ejercicio2')
 def ejercicio2():
@@ -40,7 +40,7 @@ def ejercicio2():
     return_value = json.dumps(json_value,sort_keys=True, indent=4)
     return HTTPResponse(status=200, body=return_value)
 
-sys.path.append("./Ejercicios/ejercicio3")
+#sys.path.append("./Ejercicios/ejercicio3")
 from ejercicio3 import black_and_white
 @post('/ejercicio3')
 def ejercicio3():
@@ -59,7 +59,7 @@ def ejercicio3():
     return_value = json.dumps(json_value,sort_keys=True, indent=4)
     return HTTPResponse(status=200, body=return_value)
 
-sys.path.append("./Ejercicios/ejercicio4")
+#sys.path.append("./Ejercicios/ejercicio4")
 from ejercicio4 import do_resize
 @post('/ejercicio4')
 def ejercicio4():

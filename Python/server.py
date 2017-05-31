@@ -95,4 +95,4 @@ def ejercicio4():
     msg = '{\"error\":\"el tamanio pedido supera al de la imagen\"}'
     return HTTPResponse(status=400, body=msg)
 
-run(host='localhost', port=8080, debug=True)
+run(host='0.0.0.0', port=8080, debug=True)

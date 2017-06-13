@@ -1,13 +1,8 @@
-FROM python:2
+FROM flangelier/scala
 
-RUN pip install -U googlemaps
-
-RUN pip install Pillow
-
-RUN pip install bottle
-
-RUN git clone https://github.com/Antonio21MP/Lenguajes.git
+RUN wget https://github.com/Antonio21MP/Lenguajes/archive/master.zip
+RUN unzip master.zip
 
 EXPOSE 8080
 
-CMD cd Lenguajes/Python && python server.py
+CMD cd Lenguajes-master/Scala && scalac server.scala && scala Server
